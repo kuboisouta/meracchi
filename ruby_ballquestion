@@ -18,3 +18,4 @@ end
 5.times do |i|
    printf("%s: %.1f%\n", balls[i], count[i] / 1000.0 * 100)
 end
+//コメント by 泉 
