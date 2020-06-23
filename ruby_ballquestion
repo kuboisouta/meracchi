@@ -1,0 +1,21 @@
+balls = ["赤玉", "青玉", "黒玉", "緑玉", "黄玉"]
+count = [0, 0, 0, 0, 0]
+
+1000.times do |i|
+  if balls.sample == "赤玉"
+    count[0] += 1
+  elsif balls.sample == "青玉"
+    count[1] += 1
+  elsif balls.sample == "黒玉"
+    count[2] += 1
+  elsif balls.sample == "緑玉"
+    count[3] += 1
+  else
+    count[4] += 1 //条件分岐
+  end
+end
+
+5.times do |i|
+   printf("%s: %.1f%\n", balls[i], count[i] / 1000.0 * 100)
+end
+//コメント by 泉 
